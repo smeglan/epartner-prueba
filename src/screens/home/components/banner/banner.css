@@ -1,7 +1,10 @@
-.center {
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    transform: translate(-50%, -50%);
+.paralax {
+    background-image: url(../../../../assets/banner.jpg);
+    min-height: 40vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
   

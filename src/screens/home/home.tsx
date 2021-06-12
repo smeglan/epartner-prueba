@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { Col } from 'react-bootstrap'
+import { Row, Col, Button } from 'react-bootstrap';
 import { ServiceSlider } from "./components/service-slider";
 import Image1 from '../../assets/carrousel-images/1.jpg';
 import Image2 from '../../assets/carrousel-images/2.jpg';
@@ -15,18 +15,31 @@ export class Home extends PureComponent {
     render() {
         return (
             <div>
-                <Banner image={BannerImg}>
-                    <h4 style={{ color: 'white' }}>
-                        MAS DE
-                        <br />
-                        800 MIL
-                        <br />
-                        FAMILIAS
-                        <br />
-                        HABILIDAS
-                    </h4>
-                </Banner>
-                <ServiceSlider items={carrouselData}></ServiceSlider>
+                <Row>
+                    <Col>
+                        <Banner image={BannerImg}>
+                            <h4 style={{ color: 'white' }}>
+                                <label style={{ color: "#FEDE00" }}>
+                                    MÁS DE
+                                </label>
+                                <br />
+                                800 MIL
+                                <br />
+                                FAMILIAS
+                                <br />
+                                HABILIDAS
+                            </h4>
+                            <Button>Ver productos</Button>
+                        </Banner>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <ServiceSlider items={carrouselData}></ServiceSlider>
+                    </Col>
+
+                </Row>
+
                 <Col className="d-flex justify-content-center">
                     <h3 style={{ color: '#0275d8' }}>NUEVA COLECCIÓN</h3>
                 </Col>
