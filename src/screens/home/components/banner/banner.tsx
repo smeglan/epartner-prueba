@@ -2,10 +2,10 @@ import React from 'react';
 import './banner.css'
 
 export const Banner = ({ ...props }) => {
-    const { image, text, color } = props;
+    const { image } = props;
     return (
         <div style={{ height: "40vh" }}>
-            <img src={image} style={{ height: '100%', width: '100%' }}></img>
+            <img src={image} style={{ height: '100%', width: '100%' }} alt="Banner"></img>
             <div className="center">{props.children}</div>
         </div>
     )

@@ -33,15 +33,15 @@ export class Header extends PureComponent {
                         <Nav.Link style={styles.navLink} href="#link">
                             <small style={{ color: 'black' }}>HOLA ALIAD@</small>
                             <br />
-                            <a style={styles.loginButton}>INGRESA</a>
+                            <a href="#home" style={styles.loginButton}>INGRESA</a>
                         </Nav.Link>
-                        <Nav.Link style={styles.navLink}>
+                        <Nav.Link href="#home" style={styles.navLink}>
                             <Row style={{ justifyContent: 'center', alignItems: 'center' }}>
                                 <div>
                                     <label style={{ position: 'absolute', top: 0, margin: 28, color: 'white' }}>0</label>
                                     <FontAwesomeIcon icon={faShoppingCart} size="3x" color="#0275d8" />
                                 </div>
-                                <a style={{ margin: 10 }}>Carrito</a>
+                                <a href="#home" style={{ margin: 10 }}>Carrito</a>
                             </Row>
 
                         </Nav.Link>
