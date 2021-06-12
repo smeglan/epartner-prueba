@@ -37,11 +37,22 @@ export class Home extends PureComponent {
                     <Col>
                         <ServiceSlider items={carrouselData}></ServiceSlider>
                     </Col>
-
                 </Row>
 
                 <Col className="d-flex justify-content-center">
                     <h3 style={{ color: '#0275d8' }}>NUEVA COLECCIÓN</h3>
+                </Col>
+                <ChairsCards items={chairsData}></ChairsCards>
+                <Col className="d-flex justify-content-center">
+                    <h3 style={{ color: '#0275d8' }}>SILLAS DE RUEDAS</h3>
+                </Col>
+                <ChairsCards items={chairsData}></ChairsCards>
+                <Col className="d-flex justify-content-center">
+                    <h3 style={{ color: '#0275d8' }}>ATUDAS PARA LA MARCHA</h3>
+                </Col>
+                <ChairsCards items={chairsData}></ChairsCards>
+                <Col className="d-flex justify-content-center">
+                    <h3 style={{ color: '#0275d8' }}>TERAPIAS RESPIRATORIAS</h3>
                 </Col>
                 <ChairsCards items={chairsData}></ChairsCards>
             </div>

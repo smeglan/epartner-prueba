@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Header } from './shared/components/header/header';
 import { Home } from './screens/home/home';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { Footer } from './shared/components/footer/footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
+      <Footer></Footer>
     </Router>
   );
 }
